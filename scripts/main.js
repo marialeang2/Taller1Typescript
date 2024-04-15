@@ -13,7 +13,7 @@ function renderSeriesInTable(series) {
 function renderAverage(series) {
     var averageSeason = getAverageSeason(series);
     var trElement = document.createElement("tr");
-    trElement.innerHTML = "<td colspan=\"3\">Season Average:</td><td>".concat(averageSeason, "</td>");
+    trElement.innerHTML = '<td colspan="4">Season Average: ' + averageSeason + '</td>';
     averageTBody.appendChild(trElement);
 }
 function getAverageSeason(series) {

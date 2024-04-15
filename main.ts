@@ -21,10 +21,12 @@ function renderSeriesInTable(series: Serie[]): void{
 
 }
 
+
+
 function renderAverage(series: Serie[]): void {
     let averageSeason = getAverageSeason(series);
     let trElement = document.createElement("tr");
-    trElement.innerHTML = `<td colspan="3">Season Average:</td><td>${averageSeason}</td>`;
+    trElement.innerHTML = '<td colspan="4">Season Average: ' + averageSeason + '</td>';
     averageTBody.appendChild(trElement);
 }
 
